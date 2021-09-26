@@ -1,0 +1,133 @@
+
+
+@import 'constants';
+@import 'reset';
+
+
+
+  .offer-page {
+    @include wrapper(49px,63px);
+    background-color: $dark-color;
+    &__menu {
+      .offer-page__menu-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        .offer-page__logo {
+        }
+        .offer-page__links {
+            display: flex;
+        }
+        a {
+          .offer-page__logo-wrapper {
+              display: flex;
+              align-items: center;
+              .offer-page__logo-img{
+                  width: 25px;
+              }
+              .offer-page__title {
+                  padding-left: 5px;
+                  color: $white-color;
+            }
+          }
+
+          .offer-page__logo-img {
+          }
+          &:hover {}
+          &:active {}
+          &:focus {}
+        }
+        a {
+            .offer-page__menu-link-wrapper{
+                width: 18px;
+                height: 18px;
+                margin-left: 20px;
+                margin-right: 5px;
+                .offer-page__menu-link {
+                }
+            }
+
+            .offer-page__tel-link-wrapper{
+                width: 18px;
+                height: 18px;
+                .offer-page__tel-link {
+                }
+            }
+
+          &:hover {}
+          &:active {}
+          &:focus {}
+        }
+      }
+    }
+
+  .offer-page__about-team {
+      padding-top: 60px;
+    .offer-page__secondary-title {
+        font-family: 'Helvetica Now Display';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 111%;
+        letter-spacing: -1px;
+        color: $white-color;
+        padding-bottom: 15px;
+    }
+    .offer-page__description {
+        font-family: 'Helvetica Now Display';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 155%;
+        color: $white-color;
+        padding-bottom: 42px;
+    }
+  }
+
+  
+  .offer-page__photo-slider {
+    margin-bottom: -6px;
+    margin-left: -8px;
+    margin-right: -20px;
+    .offer-page__photo-row {
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 6px;
+      .offer-page__photo {
+          display: block;
+          max-width: 120px;
+          height: 66px;
+          margin-left: 8px;
+          border-radius: 10px;
+      }
+      .offer-page__photo_with-opacity {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+        from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      }
+    }
+    .photo-row-1 {
+        @include photo-row-animation(15s,2s,slidein-row-1);
+    }
+    .photo-row-2 {
+        @include photo-row-animation(15s,3s,slidein-row-2);
+    }
+    .photo-row-3 {
+        @include photo-row-animation(15s,4s,slidein-row-3);
+    }
+  }
+
+  .offer-page__default-button-wrapper.default-button-wrapper {
+    text-align: center;
+    padding-top: 42px;
+    .offer-page__default-button {
+        width: 172px;
+        height: 40px;
+        background-color: $button-color;
+        border-radius: 10px;
+        margin: auto;
+      &:active {}
+      &:focus {}
+    }
+  }
+  }

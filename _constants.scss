@@ -1,0 +1,52 @@
+$dark-color: #020213;
+$white-color:#FFFFFF;
+$button-color:#18E8A4;
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: local("Helvetica Now Display"),
+ }
+
+
+@mixin wrapper($paddingTop,$paddingBottom) {
+    padding:$paddingTop 20px  $paddingBottom 20px;
+  }
+
+@mixin  photo-row-animation($duration,$delay,$animation-name) {
+    animation-duration: $duration;
+    animation-name: $animation-name;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: $delay;
+
+}
+
+@keyframes slidein-row-1 {
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: -803px;
+  }
+}
+
+@keyframes slidein-row-2 {
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: -740px;
+  }
+}
+
+@keyframes slidein-row-3 {
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: -790px;
+  }
+}

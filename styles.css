@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: local("Helvetica Now Display");
+}
+
+@-webkit-keyframes slidein-row-1 {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -803px;
+  }
+}
+
+@keyframes slidein-row-1 {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -803px;
+  }
+}
+
+@-webkit-keyframes slidein-row-2 {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -740px;
+  }
+}
+
+@keyframes slidein-row-2 {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -740px;
+  }
+}
+
+@-webkit-keyframes slidein-row-3 {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -790px;
+  }
+}
+
+@keyframes slidein-row-3 {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -790px;
+  }
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+}
+
+.offer-page {
+  padding: 49px 20px 63px 20px;
+  background-color: #020213;
+}
+
+.offer-page__menu .offer-page__menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer-page__menu .offer-page__menu-wrapper .offer-page__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer-page__menu .offer-page__menu-wrapper a .offer-page__logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer-page__menu .offer-page__menu-wrapper a .offer-page__logo-wrapper .offer-page__logo-img {
+  width: 25px;
+}
+
+.offer-page__menu .offer-page__menu-wrapper a .offer-page__logo-wrapper .offer-page__title {
+  padding-left: 5px;
+  color: #FFFFFF;
+}
+
+.offer-page__menu .offer-page__menu-wrapper a .offer-page__menu-link-wrapper {
+  width: 18px;
+  height: 18px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.offer-page__menu .offer-page__menu-wrapper a .offer-page__tel-link-wrapper {
+  width: 18px;
+  height: 18px;
+}
+
+.offer-page .offer-page__about-team {
+  padding-top: 60px;
+}
+
+.offer-page .offer-page__about-team .offer-page__secondary-title {
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 111%;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  padding-bottom: 15px;
+}
+
+.offer-page .offer-page__about-team .offer-page__description {
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  color: #FFFFFF;
+  padding-bottom: 42px;
+}
+
+.offer-page .offer-page__photo-slider {
+  margin-bottom: -6px;
+  margin-left: -8px;
+  margin-right: -20px;
+}
+
+.offer-page .offer-page__photo-slider .offer-page__photo-row {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 6px;
+}
+
+.offer-page .offer-page__photo-slider .offer-page__photo-row .offer-page__photo {
+  display: block;
+  max-width: 120px;
+  height: 66px;
+  margin-left: 8px;
+  border-radius: 10px;
+}
+
+.offer-page .offer-page__photo-slider .offer-page__photo-row .offer-page__photo_with-opacity {
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+}
+
+.offer-page .offer-page__photo-slider .photo-row-1 {
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-name: slidein-row-1;
+          animation-name: slidein-row-1;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.offer-page .offer-page__photo-slider .photo-row-2 {
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-name: slidein-row-2;
+          animation-name: slidein-row-2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.offer-page .offer-page__photo-slider .photo-row-3 {
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-name: slidein-row-3;
+          animation-name: slidein-row-3;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.offer-page .offer-page__default-button-wrapper.default-button-wrapper {
+  text-align: center;
+  padding-top: 42px;
+}
+
+.offer-page .offer-page__default-button-wrapper.default-button-wrapper .offer-page__default-button {
+  width: 172px;
+  height: 40px;
+  background-color: #18E8A4;
+  border-radius: 10px;
+  margin: auto;
+}
+/*# sourceMappingURL=styles.css.map */
