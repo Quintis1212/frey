@@ -1,96 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Frey</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="offer-page">
-        <!-- menu -->
-        <nav class="offer-page__menu">
-            <ul  class="offer-page__menu-wrapper">
-                <li class="offer-page__logo">
-                    <a href="#">
-                        <div class="offer-page__logo-wrapper">
-                            <img class="offer-page__logo-img" src="./img/nav-bar/freysoft-logo-mark.png" alt="freysoft-logo-mark">
-                            <h1 class="offer-page__title">FREYSOFT</h1>
-                        </div>
-                    </a>
-                </li>
-                <li class="offer-page__links">
-                    <a href="tel:+">
-                        <div class="offer-page__tel-link-wrapper">
-                            <img class="offer-page__tel-link" src="./img/nav-bar/phone.png" alt="phone-icon">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="offer-page__menu-link-wrapper">
-                            <img class="offer-page__menu-link" src="./img/nav-bar/menu.png" alt="menu-icon">
-                        </div>
-                    </a>
-                </li>
+      <!-- menu -->
+      <nav class="offer-page__menu">
+        <ul class="offer-page__menu-wrapper">
+          <li class="offer-page__logo">
+            <a href="#">
+              <div class="offer-page__logo-wrapper">
+                <img
+                  class="offer-page__logo-img"
+                  src="./img/nav-bar/freysoft-logo-mark.png"
+                  alt="freysoft-logo-mark"
+                />
+                <h1 class="offer-page__title">FREYSOFT</h1>
+              </div>
+            </a>
+          </li>
+          <li class="offer-page__links">
+            <a href="tel:+">
+              <div class="offer-page__tel-link-wrapper">
+                <img
+                  class="offer-page__tel-link"
+                  src="./img/nav-bar/phone.png"
+                  alt="phone-icon"
+                />
+              </div>
+            </a>
+            <a href="#">
+              <div class="offer-page__menu-link-wrapper">
+                <img
+                  class="offer-page__menu-link"
+                  src="./img/nav-bar/menu.png"
+                  alt="menu-icon"
+                />
+              </div>
+            </a>
+          </li>
+          <li class="offer-page__links-desktop">
+            <ul class="offer-page__links-desktop-wrapper">
+              <li class="offer-page__desktop-link">Company</li>
+              <li class="offer-page__desktop-link">Services</li>
+              <li class="offer-page__desktop-link">Blog</li>
+              <li class="offer-page__desktop-link">Career</li>
             </ul>
-        </nav>
-        <!-- title -->
-        <div class="offer-page__about-team">
-            <h1 class="offer-page__secondary-title">
-                We’ve got the job for you!
-            </h1>
-            <p class="offer-page__description">
-                We offer experienced IT specialists to be involved in ground-breaking digital projects and IT novices to develop skills in our perspective workplace. 
-            </p>
-        </div>
-        <!-- photos -->
-        <div class="offer-page__photo-slider">
-            <div class="offer-page__photo-row photo-row-1">
-                <img class="offer-page__photo"  src="./img/group-photo/1.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/2.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/3.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/4.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/5.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/8.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/9.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/1.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/2.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/3.png" alt="group-photo">
-                
-            </div>
-            <div class="offer-page__photo-row photo-row-2">
-                <img class="offer-page__photo"  src="./img/group-photo/6.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/7.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/8.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/9.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/10.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/8.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/9.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/6.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/7.png" alt="group-photo">
-                <img class="offer-page__photo"  src="./img/group-photo/8.png" alt="group-photo">
-            </div>
-            <div class="offer-page__photo-row photo-row-3">
-                <img class="offer-page__photo offer-page__photo_with-opacity"  src="./img/group-photo/11.png" alt="group-photo">
-                <img class="offer-page__photo offer-page__photo_with-opacity"  src="./img/group-photo/12.png" alt="group-photo">
-                <img class="offer-page__photo offer-page__photo_with-opacity"  src="./img/group-photo/1.png" alt="group-photo">
-                <img class="offer-page__photo offer-page__photo_with-opacity"  src="./img/group-photo/2.png" alt="group-photo">
-                <img class="offer-page__photo offer-page__photo_with-opacity"  src="./img/group-photo/3.png" alt="group-photo">
-                <img class="offer-page__photo offer-page__photo_with-opacity"  src="./img/group-photo/8.png" alt="group-photo">
-                <img class="offer-page__photo offer-page__photo_with-opacity"  src="./img/group-photo/9.png" alt="group-photo">
-                <img class="offer-page__photo offer-page__photo_with-opacity"  src="./img/group-photo/11.png" alt="group-photo">
-                <img class="offer-page__photo offer-page__photo_with-opacity"  src="./img/group-photo/12.png" alt="group-photo">
-                <img class="offer-page__photo offer-page__photo_with-opacity"  src="./img/group-photo/1.png" alt="group-photo">
-            </div>
-        </div>
-        <!-- button -->
-        <div class="offer-page__default-button-wrapper default-button-wrapper">
-            <button class="offer-page__default-button" type="submit">See All Roles</button>
-        </div>
-    </div>
-</body>
+            <ul class="offer-page__links-desktop-wrapper_secondary-style">
+              <li
+                class="
+                  offer-page__desktop-link
+                  offer-page__desktop-link_secondary-style
+                "
+              >
+                Contact Us
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- title -->
+      <div class="offer-page__about-team">
+        <h1 class="offer-page__secondary-title">
+          We’ve got the job for you<span
+            class="offer-page__secondary-title-color-symbol"
+            >!</span
+          >
+        </h1>
+        <p class="offer-page__description">
+          We offer experienced IT specialists to be involved in ground-breaking
+          digital projects and IT novices to develop skills in our perspective
+          workplace.
+        </p>
+      </div>
+      <!-- photos -->
+      <div class="offer-page__photo-slider">
+        <div class="offer-page__photo-row photo-row-1">
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/1.png" alt="group-photo" />
+          </div>
 
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/2.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/3.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/4.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/6.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/12.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/10.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/9.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/1.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/2.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/3.png" alt="group-photo" />
+          </div>
+        </div>
+
+        
+        <div class="offer-page__photo-row photo-row-2">
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/4.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/2.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/6.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/9.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/8.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/7.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/1.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/12.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/4.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/2.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo">
+            <img src="./img/group-photo/6.png" alt="group-photo" />
+          </div>
+        </div>
+        <div class="offer-page__photo-row photo-row-3">
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/12.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/11.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/10.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/9.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/8.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/7.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/6.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/5.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/3.png" alt="group-photo" />
+          </div>
+
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/4.png" alt="group-photo" />
+          </div>
+          <div class="offer-page__photo offer-page__photo_shadow-black">
+            <img src="./img/group-photo/1.png" alt="group-photo" />
+          </div>
+        </div>
+      </div>
+      <!-- button -->
+      <div class="offer-page__default-button-wrapper default-button-wrapper">
+        <button class="offer-page__default-button" type="submit">
+          See All Roles
+        </button>
+      </div>
+    </div>
+    <div class="about-company">
+      <h1 class="about-company__title">About the company</h1>
+      <div class="about-company__text-wrapper">
+        <p class="about-company__text mb-30">
+          Founded in 2019, FreySoft is a global provider of full-cycle software
+          development services with headquarters in Kyiv, Ukraine. Our objective
+          is to work on innovative projects that matter and bring value with the
+          most balanced “personal life” / “work” ratio for our team.
+        </p>
+        <p class="about-company__text">
+          The key areas of our activity include IT staff augmentation, web and
+          mobile app development, MVP development for startups, integration &
+          automatization, support & maintenance, legacy application
+          transformation, UI/ UX product design, and AI-chatbots development.
+        </p>
+      </div>
+    </div>
+    <div class="recruitment-process">
+      <div class="about-company">
+        <h1 class="about-company__title">FreySoft Recruitment process</h1>
+        <div class="about-company__text-wrapper column-lg ml-415-lg">
+          <p class="about-company__text mb-m15-lg20">
+            From the start, you will feel the responsive and effective process
+            of recruiting. The main is bureaucracy-free environment inside the
+            company.
+          </p>
+          <p class="about-company__text">
+            Identifying the right talent, attracting them, and motivating them
+            to apply is what we strive for in our recruitment process. We have
+            two key phases of hiring the candidate. After, you get either
+            feedback or an offer.
+          </p>
+        </div>
+      </div>
+      <div class="recruitment-stages">
+        <div class="recruitment-stages__card-list">
+          <div class="recruitment-stages__card-wrapper">
+            <div class="recruitment-stages__card" data-step="1">
+              <h2 class="recruitment-stages__sub-title">Stage number 1</h2>
+              <h1 class="recruitment-stages__title">
+                Interview with an HR manager
+              </h1>
+              <p class="recruitment-stages__about-text" da>
+                We arrange the phone or video interview at your convenient time.
+                Duration is on average 30-40 minutes. At this phase we are
+                getting to know each other better, determining if the requisite
+                qualifications fill the position and the candidate aligning with
+                an organization’s culture and values.
+              </p>
+            </div>
+            <div class="recruitment-stages__image-wrapper">
+              <img
+                class="recruitment-stages__image"
+                src="./img/steps-flow/steps-flow.png"
+                alt="steps-flow"
+              />
+            </div>
+          </div>
+
+          <div class="recruitment-stages__card-wrapper">
+            <div class="recruitment-stages__card" data-step="2">
+              <h2 class="recruitment-stages__sub-title">Stage number 2.1</h2>
+              <h1 class="recruitment-stages__title">Technical examination</h1>
+              <p class="recruitment-stages__about-text" da>
+                A tech interview can take about an hour. The date and time of
+                the meeting will be agreed in advance for your convenience. This
+                phase is a great opportunity for you to know about the stack and
+                get acquainted with the lead or the team you will be working
+                with. You are welcomed to ask any questions you may have about
+                the skills and technologies implemented in the project.
+              </p>
+            </div>
+            <div class="recruitment-stages__image-wrapper">
+              <img
+                class="recruitment-stages__image"
+                src="./img/steps-flow/steps-flow.png"
+                alt="steps-flow"
+              />
+            </div>
+          </div>
+
+          <div class="recruitment-stages__large-steps">
+            <img
+              class="recruitment-stages__image"
+              src="./img/steps-flow/steps-flow-lg.png"
+              alt="steps-flow"
+            />
+          </div>
+        </div>
+        <div class="recruitment-stages__paginator">
+          <div
+            class="
+              recruitment-stages__paginator-item
+              recruitment-stages__paginator-item_active
+            "
+          ></div>
+          <div class="recruitment-stages__paginator-item"></div>
+          <div class="recruitment-stages__paginator-item"></div>
+          <div class="recruitment-stages__paginator-item"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

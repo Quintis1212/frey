@@ -1,119 +1,132 @@
+@import "constants";
+@import "reset";
 
+.offer-page__links-desktop {
+  display: none;
+}
 
-@import 'constants';
-@import 'reset';
+.recruitment-stages__large-steps {
+  display: none;
+}
 
-
-
-  .offer-page {
-    @include wrapper(49px,63px);
-    background-color: $dark-color;
-    &__menu {
-      .offer-page__menu-wrapper {
+.offer-page {
+  @include wrapper(49px, 63px);
+  background-color: $dark-color;
+  &__menu {
+    .offer-page__menu-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .offer-page__links {
+        display: flex;
+      }
+      a {
+        .offer-page__logo-wrapper {
           display: flex;
           align-items: center;
-          justify-content: space-between;
-        .offer-page__logo {
-        }
-        .offer-page__links {
-            display: flex;
-        }
-        a {
-          .offer-page__logo-wrapper {
-              display: flex;
-              align-items: center;
-              .offer-page__logo-img{
-                  width: 25px;
-              }
-              .offer-page__title {
-                  padding-left: 5px;
-                  color: $white-color;
-            }
-          }
-
           .offer-page__logo-img {
+            width: 25px;
           }
-          &:hover {}
-          &:active {}
-          &:focus {}
-        }
-        a {
-            .offer-page__menu-link-wrapper{
-                width: 18px;
-                height: 18px;
-                margin-left: 20px;
-                margin-right: 5px;
-                .offer-page__menu-link {
-                }
-            }
-
-            .offer-page__tel-link-wrapper{
-                width: 18px;
-                height: 18px;
-                .offer-page__tel-link {
-                }
-            }
-
-          &:hover {}
-          &:active {}
-          &:focus {}
+          .offer-page__title {
+            padding-left: 5px;
+            color: $white-color;
+            font-family: "Helvetica Now Display";
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 111%;
+            letter-spacing: 1px;
+          }
         }
       }
-    }
+      a {
+        .offer-page__menu-link-wrapper {
+          width: 18px;
+          height: 18px;
+          margin-left: 20px;
+          margin-right: 5px;
+        }
 
-  .offer-page__about-team {
-      padding-top: 60px;
-    .offer-page__secondary-title {
-        font-family: 'Helvetica Now Display';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 111%;
-        letter-spacing: -1px;
-        color: $white-color;
-        padding-bottom: 15px;
-    }
-    .offer-page__description {
-        font-family: 'Helvetica Now Display';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 155%;
-        color: $white-color;
-        padding-bottom: 42px;
+        .offer-page__tel-link-wrapper {
+          width: 18px;
+          height: 18px;
+        }
+      }
     }
   }
 
-  
+  .offer-page__about-team {
+    padding-top: 60px;
+    .offer-page__secondary-title {
+      font-family: "Helvetica Now Display";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 111%;
+      letter-spacing: -1px;
+      color: $white-color;
+      padding-bottom: 15px;
+      .offer-page__secondary-title-color-symbol {
+        color: $button-color;
+      }
+    }
+    .offer-page__description {
+      font-family: "Helvetica Now Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 155%;
+      color: $white-color;
+      padding-bottom: 42px;
+    }
+  }
+
   .offer-page__photo-slider {
     margin-bottom: -6px;
-    margin-left: -8px;
+    margin-left: -20px;
     margin-right: -20px;
+    overflow: hidden;
     .offer-page__photo-row {
-        overflow: hidden;
-        display: flex;
-        flex-wrap: nowrap;
-        margin-bottom: 6px;
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 6px;
+      margin-left: 8px;
       .offer-page__photo {
-          display: block;
-          max-width: 120px;
-          height: 66px;
-          margin-left: 8px;
-          border-radius: 10px;
+
+        margin-left: 6px;
       }
-      .offer-page__photo_with-opacity {
-        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
-        from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      .offer-page__photo > img {
+        max-width: 120px;
+        height: 66px;
+        border-radius: 10px;
+        width: auto;
+
+      }
+      .offer-page__photo_shadow-black {
+        -webkit-mask-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(0, 0, 0, 1)),
+          to(rgba(0, 0, 0, 0))
+        );
+        mask-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(0, 0, 0, 1)),
+          to(rgba(0, 0, 0, 0))
+        );
       }
     }
     .photo-row-1 {
-        @include photo-row-animation(15s,2s,slidein-row-1);
+      @include photo-row-animation(15s, 2s, slidein-row-1);
     }
     .photo-row-2 {
-        @include photo-row-animation(15s,3s,slidein-row-2);
+      @include photo-row-animation(15s, 3s, slidein-row-2);
     }
     .photo-row-3 {
-        @include photo-row-animation(15s,4s,slidein-row-3);
+      @include photo-row-animation(15s, 4s, slidein-row-3);
     }
   }
 
@@ -121,13 +134,396 @@
     text-align: center;
     padding-top: 42px;
     .offer-page__default-button {
-        width: 172px;
-        height: 40px;
-        background-color: $button-color;
-        border-radius: 10px;
-        margin: auto;
-      &:active {}
-      &:focus {}
+      width: 172px;
+      height: 40px;
+      background-color: $button-color;
+      border-radius: 10px;
+      margin: auto;
     }
   }
+}
+
+.about-company {
+  @include wrapper(49px, 48px);
+  background-color: $white-color;
+  .about-company__title {
+    font-family: "Helvetica Now Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 90%;
+    letter-spacing: 2px;
+    color: $about-title-color;
+    margin-bottom: 30px;
   }
+  .about-company__text {
+    font-family: 'Helvetica Now Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    color: $about-text-color;
+  }
+}
+
+.recruitment-process {
+  background-color: $gray-color;
+  .about-company {
+    background-color: inherit;
+  }
+  .recruitment-stages {
+    margin-top: 55px;
+    .recruitment-stages__card-list {
+      display: flex;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      .recruitment-stages__card-wrapper {
+        margin-left: 20px;
+      }
+      .recruitment-stages__card {
+        margin-bottom: 74px;
+        padding: 32px 25px 102px 25px;
+        background-color: $white-color;
+        border-radius: 16px;
+        min-height: 484px;
+        position: relative;
+        min-width: 228px;
+        margin-right: 15px;
+        z-index: 10;
+        box-shadow: 0px 32px 16px rgba(0, 0, 0, 0.09),
+          0px 16px 8px rgba(0, 0, 0, 0.09), 0px 8px 4px rgba(0, 0, 0, 0.09),
+          0px 4px 2px rgba(0, 0, 0, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.09);
+        &::before {
+          content: attr(data-step);
+          position: absolute;
+          font-family: "Helvetica Now Display Bold";
+          font-weight: bold;
+          font-size: 164px;
+          top: 350px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $gray-color-secondary;
+          opacity: 0.1;
+          z-index: -1;
+          overflow: hidden;
+        }
+        .recruitment-stages__sub-title {
+          font-family: "Helvetica Now Display";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 110%;
+          text-transform: uppercase;
+          color: $about-text-color;
+          margin-bottom: 16px;
+        }
+        .recruitment-stages__title {
+          font-family: "Helvetica Now Display";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 32px;
+          line-height: 110%;
+          color: $about-title-color;
+          margin-bottom: 24px;
+        }
+        .recruitment-stages__about-text {
+          font-family: "Helvetica Now Display";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 25px;
+          color: $gray-color-secondary;
+        }
+      }
+
+      .recruitment-stages__image-wrapper {
+        margin-left: -20px;
+        margin-right: -20px;
+        position: relative;
+        .recruitment-stages__image {
+          position: absolute;
+          top: -193px;
+          z-index: 991;
+        }
+      }
+    }
+
+    .recruitment-stages__paginator {
+      padding-bottom: 50px;
+      display: flex;
+      width: 112px;
+      justify-content: space-between;
+      margin: auto;
+      .recruitment-stages__paginator-item {
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.09);
+      }
+      .recruitment-stages__paginator-item_active {
+        background: linear-gradient(0deg, #18e8a4, #18e8a4),
+          linear-gradient(117.15deg, #1bd1fc 0%, #316dd1 100%);
+        width: 40px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.09),
+          0px 6px 8px rgba(0, 0, 0, 0.09), 0px 4px 4px rgba(0, 0, 0, 0.09),
+          0px 2px 2px rgba(0, 0, 0, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.09);
+        border-radius: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 760px) {
+  .offer-page .offer-page__about-team .offer-page__secondary-title {
+    font-size: 56px;
+    padding-bottom: 24px;
+  }
+
+  .offer-page .offer-page__about-team .offer-page__description {
+    padding-bottom: 19px;
+  }
+
+  .offer-page .offer-page__default-button-wrapper.default-button-wrapper {
+    text-align: left;
+    padding-top: 6px;
+  }
+
+  .about-company {
+    padding-top: 50px;
+  }
+  .offer-page .offer-page__photo-slider .offer-page__photo-row .offer-page__photo {
+    margin-left: 10px;
+
+  }
+  .offer-page .offer-page__photo-slider .offer-page__photo-row .offer-page__photo > img {
+    max-width: 188px;
+    height: 105px;
+
+}
+
+.offer-page .offer-page__default-button-wrapper.default-button-wrapper .offer-page__default-button {
+  margin-left: 80px;
+}
+
+  .about-company .about-company__title {
+    font-family: "Helvetica Now Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 90%;
+    letter-spacing: -1px;
+    color: #202523;
+    margin-bottom: 30px;
+  }
+
+  .about-company__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-company__text {
+    max-width: 340px;
+  }
+
+  .recruitment-process
+    .recruitment-stages
+    .recruitment-stages__card-list
+    .recruitment-stages__card {
+    max-width: 354px;
+    height: 366px;
+  }
+
+  .recruitment-process
+    .recruitment-stages
+    .recruitment-stages__card-list
+    .recruitment-stages__image-wrapper
+    .recruitment-stages__image {
+    top: -245px;
+  }
+}
+
+@media (min-width: 1430px) {
+  .offer-page__menu,
+  .offer-page__about-team,
+  .about-company {
+    max-width: 1260px;
+    margin: auto;
+  }
+  .offer-page__menu .offer-page__menu-wrapper .offer-page__links {
+    display: none;
+  }
+  .offer-page__menu .offer-page__menu-wrapper {
+    justify-content: space-between;
+  }
+
+  .offer-page {
+    padding: 49px 90px 63px 90px;
+  }
+
+  .offer-page__links-desktop {
+    display: flex;
+    align-items: center;
+    .offer-page__links-desktop-wrapper {
+      display: flex;
+      width: 337px;
+      justify-content: space-between;
+    }
+    .offer-page__links-desktop-wrapper_secondary-style {
+      margin-left: 300px;
+    }
+    ul {
+      .offer-page__desktop-link {
+        color: $white-color;
+        font-family: "Helvetica Now Display";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        &:hover {
+          color: $button-color;
+          cursor: pointer;
+        }
+      }
+      .offer-page__desktop-link_secondary-style {
+        border: 2px solid $button-color;
+        border-radius: 383px;
+        padding: 8px 35px;
+      }
+    }
+  }
+
+  .offer-page .offer-page__about-team {
+    display: flex;
+  }
+
+  .offer-page .offer-page__about-team .offer-page__secondary-title {
+    width: 390px;
+  }
+
+  .offer-page .offer-page__about-team .offer-page__description {
+    width: 370px;
+    margin-left: 6.5%;
+  }
+  .offer-page
+    .offer-page__photo-slider
+    .offer-page__photo-row
+    .offer-page__photo {
+    position: relative;
+    max-width: none;
+    margin-left: 20px;
+    &:hover {
+      &::before {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(24, 232, 164, 0.5);
+        border-radius: 10px;
+        content: "See All Roles";
+        font-family: "Helvetica Now Display Bold";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .offer-page .offer-page__photo-slider .offer-page__photo-row .offer-page__photo > img {
+    max-width: 378px;
+    height: 212px;
+
+}
+  .offer-page .offer-page__photo-slider {
+    margin-bottom: 30px;
+    margin-left: -90px;
+    margin-right: -90px;
+
+  }
+  .offer-page .offer-page__default-button-wrapper.default-button-wrapper {
+    display: none;
+  }
+
+  .about-company {
+    padding: 49px 90px 48px 90px;
+    display: flex;
+    justify-content: space-between;
+    .column-lg {
+      display: block;
+    }
+    .ml-415-lg {
+      margin-left: 415px;
+    }
+  }
+
+  .about-company .about-company__title {
+    font-size: 62px;
+    width: 320px;
+  }
+
+  .about-company__text-wrapper {
+    width: 714px;
+    .about-company__text {
+      max-width: none;
+    }
+    .mb-m15-lg20 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .recruitment-process
+    .recruitment-stages
+    .recruitment-stages__card-list
+    .recruitment-stages__card
+    .recruitment-stages__title {
+    font-size: 36px;
+  }
+
+  .recruitment-process
+    .recruitment-stages
+    .recruitment-stages__card-list
+    .recruitment-stages__card {
+    width: 577px;
+    max-width: 620px;
+  }
+
+  .recruitment-process .recruitment-stages .recruitment-stages__card-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .recruitment-process .recruitment-stages .recruitment-stages__card-list {
+    position: relative;
+  }
+
+  .recruitment-process
+    .recruitment-stages
+    .recruitment-stages__card-list
+    .recruitment-stages__card
+    > * {
+    width: 50%;
+  }
+  .recruitment-stages__image-wrapper {
+    display: none;
+  }
+  .recruitment-stages__large-steps {
+    display: block;
+    position: absolute;
+    top: 504px;
+    z-index: 100000;
+    width: 90rem;
+  }
+  .recruitment-process
+    .recruitment-stages
+    .recruitment-stages__card-list
+    .recruitment-stages__card::before {
+    font-size: 315px;
+    top: 307px;
+    left: 82%;
+  }
+}

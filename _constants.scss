@@ -1,12 +1,18 @@
 $dark-color: #020213;
 $white-color:#FFFFFF;
 $button-color:#18E8A4;
+$about-title-color:#202523;
+$about-text-color: #545460;
+$gray-color:#D5D4D9;
+$gray-color-secondary:#596067;
+
 
 @font-face {
   font-family: "Helvetica Now Display";
-  src: local("Helvetica Now Display"),
+  src: local("Helvetica Now Display");
+  font-family: "Helvetica Now Display Bold";
+  src: local("Helvetica Now Display Bold"),
  }
-
 
 @mixin wrapper($paddingTop,$paddingBottom) {
     padding:$paddingTop 20px  $paddingBottom 20px;
@@ -22,13 +28,8 @@ $button-color:#18E8A4;
 }
 
 @keyframes slidein-row-1 {
-  from {
-    margin-left: 0;
-  }
-
-  to {
-    margin-left: -803px;
-  }
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-950px)}
 }
 
 @keyframes slidein-row-2 {
@@ -50,3 +51,12 @@ $button-color:#18E8A4;
     margin-left: -790px;
   }
 }
+
+
+.mb-30{
+margin-bottom: 30px;
+}
+
+.mb-m15-lg20{
+  margin-bottom: 15px;
+  }
